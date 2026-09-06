@@ -11,32 +11,88 @@
 
 <body>
 
-    <div class="container">
+<header class="navbar">
+    <div class="logo">DSA<span>Tracker</span></div>
 
-        <h1>DSA PROGRESS</h1>
+    <button id="resetBtn" class="reset-btn">
+        Reset Progress
+    </button>
+</header>
 
-        <p class="subtitle">
-            Track your DSA learning journey
+
+<main class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+        <p class="badge">YOUR DSA JOURNEY</p>
+
+        <h1>
+            Master DSA.<br>
+            Track Your Progress.
+        </h1>
+
+        <p class="hero-text">
+            Learn Data Structures and Algorithms systematically
+            and stay consistent with your preparation.
         </p>
+    </section>
+
+
+    <!-- Overall Progress -->
+    <section class="overall-card">
+
+        <div class="overall-top">
+            <div>
+                <p class="small-title">OVERALL PROGRESS</p>
+                <h2 id="overallPercentage">0%</h2>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <strong id="completedCount">0</strong>
+                    <span>Completed</span>
+                </div>
+
+                <div>
+                    <strong id="remainingCount">0</strong>
+                    <span>Remaining</span>
+                </div>
+
+                <div>
+                    <strong id="totalCount">0</strong>
+                    <span>Total</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="overall-bar">
+            <div id="overallFill"></div>
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section>
+
+        <div class="section-heading">
+            <h2>DSA Topics</h2>
+            <p>Complete topics as you learn them.</p>
+        </div>
 
         <div id="tracker"></div>
 
-        <div class="divider"></div>
+    </section>
 
-        <div class="overall">
-            <h2>
-                Overall Progress:
-                <span id="overallPercentage">0%</span>
-            </h2>
+</main>
 
-            <p id="overallCompleted">
-                0 / 0 completed
-            </p>
-        </div>
 
-    </div>
+<footer>
+    <p>DSA Progress Tracker • Keep Learning. Keep Solving.</p>
+</footer>
 
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
